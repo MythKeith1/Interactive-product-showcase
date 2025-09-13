@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Product Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">LumenStudio</a>
+
+      <nav class="nav desktop-nav" aria-label="Primary">
+        <a href="#showcase">Showcase</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <nav class="nav mobile-nav">
+        <a href="#showcase">Showcase</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / CTA -->
+    <section class="hero reveal" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title">Showcase — Products that spark curiosity</h1>
+          <p class="lead">Interactive product experiences built with pixel-perfect design and delightful motion.</p>
+          <div class="hero-ctas">
+            <a href="#showcase" class="btn primary cta-glow">Explore Products</a>
+            <a href="#contact" class="btn ghost">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="feature-card glass tilt-card" data-role="demo">
+            <img src="https://via.placeholder.com/520x340.png?text=Hero+Product" alt="Hero product" />
+            <div class="card-meta">
+              <h4>Nova Speaker</h4>
+              <p>Signature model — premium sounds, sculpted design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section id="showcase" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="products-grid">
+          <!-- Product card 1 -->
+          <article class="product-card tilt-card" tabindex="0" data-name="Aurora Speaker">
+            <div class="card-visual">
+              <img src="https://via.placeholder.com/540x360.png?text=Aurora+Speaker" alt="Aurora Speaker" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Aurora Speaker</h3>
+              <p class="card-desc">Immersive sound, minimal silhouette.</p>
+              <div class="card-actions">
+                <div class="price">R1,299</div>
+                <button class="btn small cta-glow">Buy Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product card 2 -->
+          <article class="product-card tilt-card" tabindex="0" data-name="Luma Headset">
+            <div class="card-visual">
+              <img src="https://via.placeholder.com/540x360.png?text=Luma+Headset" alt="Luma Headset" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Luma Headset</h3>
+              <p class="card-desc">Comfort-first design with studio-grade audio.</p>
+              <div class="card-actions">
+                <div class="price">R899</div>
+                <button class="btn small cta-glow">Buy Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product card 3 -->
+          <article class="product-card tilt-card" tabindex="0" data-name="Flow Lamp">
+            <div class="card-visual">
+              <img src="https://via.placeholder.com/540x360.png?text=Flow+Lamp" alt="Flow Lamp" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Flow Lamp</h3>
+              <p class="card-desc">Ambient lighting with an intelligent glow.</p>
+              <div class="card-actions">
+                <div class="price">R499</div>
+                <button class="btn small cta-glow">Buy Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product card 4 -->
+          <article class="product-card tilt-card" tabindex="0" data-name="Pulse Charger">
+            <div class="card-visual">
+              <img src="https://via.placeholder.com/540x360.png?text=Pulse+Charger" alt="Pulse Charger" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Pulse Charger</h3>
+              <p class="card-desc">Fast, compact, beautifully engineered.</p>
+              <div class="card-actions">
+                <div class="price">R299</div>
+                <button class="btn small cta-glow">Buy Now</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Why our products stand out</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <h3>Design-forward</h3>
+            <p>Every product is crafted with a balance of form and function.</p>
+          </div>
+          <div class="feature">
+            <h3>Delightful interactions</h3>
+            <p>Smooth motion and thoughtful details that feel premium.</p>
+          </div>
+          <div class="feature">
+            <h3>Performance-first</h3>
+            <p>Optimised for speed, accessibility, and responsiveness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <h2 class="section-title">Get in touch</h2>
+          <p>Send a short note and we’ll reply within one business day.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            <span class="label">Name</span>
+            <input type="text" name="name" required placeholder="Your full name" />
+          </label>
+          <label>
+            <span class="label">Email</span>
+            <input type="email" name="email" required placeholder="you@company.com" />
+          </label>
+          <label>
+            <span class="label">Message</span>
+            <textarea name="message" rows="4" required placeholder="Tell us about your project (brief)"></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary cta-glow">Send Message</button>
+            <div id="formMessage" class="form-message" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span id="year"></span> LumenStudio — Crafted with HTML, CSS & JS</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
